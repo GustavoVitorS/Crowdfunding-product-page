@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <title>Frontend Mentor | Página do produto crowdfunding</title>
+  <style>
+    .attribution {
+       font-size: 11px;
+       text-align: center;
+    }
+    .attribution a {
+       color: hsl(228, 45%, 44%);
+    }
+ </style>
+</head>
+<body>
+  <div class="dIExplorer">
+    <p>Seu navegador está desatualizado e é um risco de segurança</p>
+    <p>atualize para um dos seguintes:</p>
+    <div class="browsers">
+       <a href="https://www.mozilla.org/firefox/new/"><img src="./assets/firefoxbrowser.svg" alt="Mozilla Firefox" /></a>
+       <a href="https://www.google.com/chrome/"><img src="./assets/googlechrome.svg" alt="Google Chrome" /></a>
+       <a href="https://www.microsoft.com/edge"><img src="./assets/microsoftedge.svg" alt="Microsoft Edge" /></a>
+    </div>
+ </div>
+ <a class="skip-link" href="#content">Ir para o conteúdo</a>
+ <header>
+    <nav class="nav flex">
+       <div class="logo"><img src="./images/logo.svg" alt="crowdfund logo" /></div>
+       <div class="mobile-menu"><img class="hamburger" src="./images/icon-hamburger.svg" alt="toggle menu" /></div>
+       <ul class="nav-list flex" role="list">
+          <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Descobrir</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Iniciar</a></li>
+       </ul>
+    </nav>
+ </header>
+
+ <main>
+    <div id="content" class="container">
+       <section class="center flow-content">
+          <div class="crowdfunder-logo"><img src="./images/logo-mastercraft.svg" alt="mastercraft logo" /></div>
+          <h1>Elevador de monitor de bambu Mastercraft</h1>
+          <p class="subtitle">Um suporte de monitor bonito e artesanal para reduzir o cansaço do pescoço e dos olhos.</p>
+          <div class="row">
+             <button class="btn btn-primary" id="no-reward-btn">Voltar este projeto</button>
+             <div class="bookmark">
+                <input type="checkbox" name="bookmark" id="bookmark" />
+                <label for="bookmark">
+                   <span>Marca páginas</span>
+                   <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg">
+                      <g fill="none" fill-rule="evenodd">
+                         <circle fill="#2F2F2F" cx="28" cy="28" r="28" />
+                         <path fill="#B1B1B1" d="M23 19v18l5-5.058L33 37V19z" />
+                      </g>
+                   </svg>
+                </label>
+             </div>
+          </div>
+       </section>
+       <section class="stats">
+          <div class="flex even">
+             <div class="amount">
+                <p class="number">R$<span>89,914</span></p>
+                <p class="title">of R$100,000 apoiado</p>
+             </div>
+             <div class="backers">
+                <p class="number">5,007</p>
+                <p class="title">total de apoiadores</p>
+             </div>
+             <div>
+                <p class="number">56</p>
+                <p class="title">dias restantes</p>
+             </div>
+          </div>
+          <div class="progress-bar">
+             <div class="progress"></div>
+          </div>
+       </section>
+       <section class="flow-content flow-content--large">
+          <h2>Sobre este projeto</h2>
+          <p>O Mastercraft Bamboo Monitor Riser é uma plataforma robusta e elegante que eleva sua tela a uma altura de visualização mais confortável. Colocar o monitor no nível dos olhos tem o potencial de melhorar sua postura e deixá-lo mais confortável durante o trabalho, ajudando você a manter o foco na tarefa em mãos.
+            </p>
+
+          <p>Com artesanato artesanal, a simplicidade do design cria espaço extra na mesa abaixo do computador para permitir que blocos de notas, canetas e pen drives sejam armazenados sob o suporte.
+          </p>
+          <div class="rewards flow-content">
+             <div class="card flow-content flow-content--large">
+                <div class="flex">
+                   <h3>Suporte de bambu</h3>
+                   <p class="price">Promessa de R$ 25 ou mais</p>
+                </div>
+                <p>Você obtém um suporte ergonômico feito de bambu natural. Você nos ajudou a lançar nossa campanha promocional e será adicionado a uma lista especial de membros do Apoiador.</p>
+                <div class="flex flow-content">
+                   <p class="amount-left"><span>101</span>esquerda</p>
+                   <button class="btn btn-primary" id="bamboo-reward-btn">Selecionar recompensa</button>
+                </div>
+             </div>
+             <div class="card flow-content flow-content--large">
+                <div class="flex">
+                   <h3>Suporte Edição Preta</h3>
+                   <p class="price">Prometa R$ 75 ou mais</p>
+                </div>
+                <p>Você recebe um suporte de computador Black Special Edition e um agradecimento pessoal. Você será adicionado à nossa lista de membros Apoiadores. O envio está incluído.</p>
+                <div class="flex flow-content">
+                   <p class="amount-left"><span>64</span>esquerda</p>
+                   <button class="btn btn-primary" id="blackedition-reward-btn">Selecionar recompensa</button>
+                </div>
+             </div>
+             <div class="card flow-content flow-content--large inactive">
+                <div class="flex">
+                   <h3>Edição especial de mogno</h3>
+                   <p class="price">Prometa R$ 200 ou mais</p>
+                </div>
+                <p>Você ganha dois suportes de mogno de edição especial, uma camiseta de apoio e um agradecimento pessoal. Você será adicionado à nossa lista de membros Apoiadores. O envio está incluído.</p>
+                <div class="flex flow-content">
+                   <p class="amount-left"><span>0</span>esquerda</p>
+                   <button class="btn btn-inactive">Fora de estoque</button>
+                </div>
+             </div>
+          </div>
+       </section>
+    </div>
+ </main>
+ <div class="modal-container">
+    <div class="container">
+       <div id="modal-pledge" class="modal modal-pledge flow-content flow-content--large">
+          <div class="close-modal">
+             <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg"><path d="M11.314 0l2.828 2.828L9.9 7.071l4.243 4.243-2.828 2.828L7.07 9.9l-4.243 4.243L0 11.314 4.242 7.07 0 2.828 2.828 0l4.243 4.242L11.314 0z" fill="#000" fill-rule="evenodd" opacity=".4" /></svg>
+          </div>
+          <h2>Voltar este projeto</h2>
+          <p>Quer nos apoiar em trazer o Mastercraft Bamboo Monitor Riser para o mundo?</p>
+          <div class="rewards flow-content">
+             <div class="card" id="no-reward-card">
+                <div class="card-description">
+                   <label for="no-reward"></label>
+                   <input type="radio" name="reward" id="no-reward" />
+                   <div class="flex">
+                      <h3>Promessa sem recompensa</h3>
+                   </div>
+                   <p class="description">Escolha nos apoiar sem recompensa se você simplesmente acredita em nosso projeto. Como apoiador, você será inscrito para receber atualizações de produtos por e-mail.
+                  </p>
+                </div>
+                <div class="pledge" id="no-reward-pledge">
+                   <p>Digite sua promessa</p>
+                   <label for="pledge1">R$<input type="number" name="pledge" id="pledge1" value="1" /></label>
+                   <button class="btn-primary" id="pledge1submit">Continuar</button>
+                </div>
+             </div>
+             <div class="card" id="bamboo-reward-card">
+                <div class="card-description">
+                   <label for="bamboo-reward"></label>
+                   <input type="radio" name="reward" id="bamboo-reward" />
+                   <div class="flex">
+                      <h3>Suporte de bambu</h3>
+                      <p class="price">Prometa $ 25 ou mais</p>
+                   </div>
+                   <p class="description">Você obtém um suporte ergonômico feito de bambu natural. Você nos ajudou a lançar nossa campanha promocional e será adicionado a uma lista especial de membros do Apoiador.</p>
+                   <p class="amount-left"><span>101</span>left</p>
+                </div>
+                <div class="pledge" id="bamboo-reward-pledge">
+                   <p>Digite sua promessa</p>
+                   <label for="pledge2">$<input type="number" name="pledge" id="pledge2" min="25" value="25" /></label>
+                   <button class="btn-primary" id="pledge2submit">Continuar</button>
+                </div>
+             </div>
+             <div class="card" id="blackedition-reward-card">
+                <div class="card-description">
+                   <label for="blackedition-reward"></label>
+                   <input type="radio" name="reward" id="blackedition-reward" />
+                   <div class="flex">
+                      <h3>Suporte Edição Preta</h3>
+                      <p class="price">Prometa R$ 75 ou mais</p>
+                   </div>
+                   <p class="description">Você recebe um suporte de computador Black Special Edition e um agradecimento pessoal. Você será adicionado à nossa lista de membros Apoiadores. O envio está incluído.
+                  </p>
+                   <p class="amount-left"><span>64</span>esquerda</p>
+                </div>
+                <div class="pledge" id="blackedition-reward-pledge">
+                   <p>Digite sua promessa</p>
+                   <label for="pledge3">$<input type="number" name="pledge" id="pledge3" min="75" value="75" /></label>
+                   <button class="btn-primary" id="pledge3submit">Continuar</button>
+                </div>
+             </div>
+             <div class="card flow-content inactive">
+                <div class="card-description">
+                   <input type="radio" name="reward" id="mahogany-reward" disabled />
+                   <div class="flex">
+                      <h3>Edição especial de mogno</h3>
+                      <p class="price">Prometa R$ 200 ou mais</p>
+                   </div>
+                   <p class="description">Você ganha dois suportes de mogno de edição especial, uma camiseta de apoio e um agradecimento pessoal. Você será adicionado à nossa lista de membros Apoiadores. O envio está incluído.</p>
+                   <p class="amount-left"><span>0</span>esquerda</p>
+                </div>
+             </div>
+          </div>
+       </div>
+       <div id="modal-success" class="modal modal-success flow-content flow-content--large center">
+          <div class="img"><img src="./images/icon-check.svg" alt="check icon" /></div>
+          <h2>Obrigado por seu apoio!</h2>
+          <p>Sua promessa nos deixa um passo mais perto de compartilhar o Mastercraft Bamboo Monitor Riser em todo o mundo. Você receberá um e-mail assim que nossa campanha for concluída.</p>
+          <button class="btn-primary">Entendi!</button>
+       </div>
+    </div>
+ </div>
+ <script src="./js/main.js"></script>
+</body>
+</html>
